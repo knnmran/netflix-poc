@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": [
+        "*"
+      ],
+      "@app/*": [
+        "src/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./*.ts",
+    "./*.json",
+    ".env"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}
