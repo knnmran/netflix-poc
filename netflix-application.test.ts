@@ -46,7 +46,10 @@ describe("application form", () => {
       await driver.findElement(phoneNumberInputBox).sendKeys(phoneNumber);
 
       await driver.findElement(resumeInput).sendKeys(samplePdfPath);
-      await driver.findElement(uploadResumeButton).submit();
+
+      // await driver.wait(until.elementsLocated(uploadResumeButton), 5000);
+      // await driver.findElement(uploadResumeButton).submit();
+      
       await driver.wait(until.elementsLocated(removeButton), 5000);
 
       // adding sleep for upload demonstration purposes
